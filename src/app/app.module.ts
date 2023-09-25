@@ -13,10 +13,12 @@ import {MatDialog, MAT_DIALOG_DATA, MatDialogRef, MatDialogModule} from '@angula
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ButtonLoginComponent } from './button-login/button-login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonLoginComponent
   ],
   imports: [
     BrowserModule,
