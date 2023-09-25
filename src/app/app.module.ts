@@ -12,6 +12,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialog, MAT_DIALOG_DATA, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,7 +28,8 @@ import {MatDividerModule} from '@angular/material/divider';
     FormsModule,
     MatInputModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
