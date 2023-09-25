@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'album-saves';
+  buttonLogin = 'Logar'
+  buttonSing = 'Cadastrar'
+  routerName = '/login'
+  buttonColor = 'colorLogin'
 }

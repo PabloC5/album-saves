@@ -27,3 +27,8 @@ body, html {
     align-items: center;
     height: 100vh; /* 100% da altura da tela */
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Isso alinhará os botões horizontalmente com espaço entre eles */
+}

@@ -42,7 +42,13 @@
                       O que deseja fazer?
                     </h2>
                   </div>
-                  <div>
+                  <div class="button-container">
+                    <div>
+                      <app-button-login [routerName]="routerName" [buttonColor]="buttonColor" [nameButton]="buttonLogin"></app-button-login>
+                    </div>
+                    <div>
+                      <app-button-login [nameButton]="buttonSing"></app-button-login>
+                    </div>
                     <!-- <button class="btn btn-primary">Botão 1</button>
                     <button class="btn btn-danger">Botão 2</button>   -->
                   </div>
