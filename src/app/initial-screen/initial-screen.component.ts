@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./initial-screen.component.scss']
 })
 export class InitialScreenComponent {
-  buttonLogin = 'Logar'
-  buttonSing = 'Cadastrar'
-  routerName = '/login'
-  buttonColor = 'colorLogin'
+  buttonLogin = 'Logar';
+  buttonSing = 'Cadastrar';
+  routerName = '/login';
+  buttonColor = 'colorLogin';
+  buttonColorCadastro= 'colorCadastro';
 }
