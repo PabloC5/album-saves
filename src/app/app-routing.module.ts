@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InitialScreenComponent } from './initial-screen/initial-screen.component';
 
 const routes: Routes = [
-  // { path: 'login', component: LoginComponent },
+  { path: 'album-saves', component: InitialScreenComponent },
 ];
 
 @NgModule({

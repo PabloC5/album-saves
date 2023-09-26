@@ -14,11 +14,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ButtonLoginComponent } from './button-login/button-login.component';
+import { InitialScreenComponent } from './initial-screen/initial-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonLoginComponent
+    ButtonLoginComponent,
+    InitialScreenComponent
   ],
   imports: [
     BrowserModule,
