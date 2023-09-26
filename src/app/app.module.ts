@@ -12,9 +12,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialog, MAT_DIALOG_DATA, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { ButtonLoginComponent } from './button-login/button-login.component';
+import { InitialScreenComponent } from './initial-screen/initial-screen.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonLoginComponent,
+    InitialScreenComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,8 @@ import {MatDividerModule} from '@angular/material/divider';
     FormsModule,
     MatInputModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
