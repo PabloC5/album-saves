@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="d-flex justify-content-center">
+                <img class="imagTamanho" src="../assets/logo-preta1.png" alt="logo">
+            </div>
+            <div class="text-center">
+                <h1 class="fonts" >Olá! Realize seu login aqui</h1>    
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <p>
+                    <mat-form-field class="custom-form-field" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput class="custom-input" placeholder="Seu email">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field class="custom-form-field" appearance="outline">
+                        <mat-label>Enter your password</mat-label>
+                        <input matInput class="custom-input" [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </p>
+                <button mat-raised-button class="botao-grande buttonColor">
+                    Logar
+                </button>
+            </div>
+              
+              
+        </main>
+    </body>
+</html>

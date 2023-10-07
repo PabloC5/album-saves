@@ -1,0 +1,32 @@
+.imagTamanho {
+    width: 240px; /* Define a largura desejada */
+    height: auto; 
+    margin-top: 5px;
+}
+
+.fonts {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold
+}
+
+
+.botao-grande {
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 20px 88px; /* Espaçamento interno */
+}
+
+.buttonColor {
+    background-color: #06243F !important; /* Cor de fundo personalizada */
+    color: #FFFFFF !important; 
+    font-family: 'Orbitron', sans-serif;
+}
+
+.custom-form-field .mat-form-field-label {
+    font-size: 100px; 
+}
+
+.custom-form-field  {
+    // font-size: 18px; 
+    padding: 5px;  
+    width: 300px    
+}

@@ -14,6 +14,8 @@ export class FooterViewService {
     debugger
     if (route != '/') {
       this.footer.emit(true);
+    } else {
+      this.footer.emit(false);
     }
   }
 }
