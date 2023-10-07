@@ -15,12 +15,14 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ButtonLoginComponent } from './button-login/button-login.component';
 import { InitialScreenComponent } from './initial-screen/initial-screen.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonLoginComponent,
-    InitialScreenComponent
+    InitialScreenComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
