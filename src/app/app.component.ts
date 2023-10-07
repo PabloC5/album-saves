@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { FooterViewService } from './footer-view.service';
 
 @Component({
@@ -11,9 +11,18 @@ export class AppComponent implements OnInit {
   constructor(private router: Router, private footerView: FooterViewService) { }
 
   hiddenFooter: boolean = false;
+  urlAtual: string = '';
+  urlAnterior: string = '';
 
   ngOnInit(): void {
-    this.footerView.mostrarFooter(this.router.url)
+
+    this.router.events.subscribe((e: any) => {
+      if (e instanceof NavigationEnd) {
+        this.urlAnterior = this.urlAtual;
+        this.urlAtual = e.url;
+        this.footerView.mostrarFooter(this.urlAtual)
+      }
+    });
     this.footerView.footer.subscribe(
       mostrar => this.hiddenFooter = mostrar
     )

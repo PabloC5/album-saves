@@ -11,7 +11,8 @@ export class FooterViewService {
   constructor() { }
 
   mostrarFooter(route: string) {
-    if (route == '/') {
+    debugger
+    if (route != '/') {
       this.footer.emit(true);
     }
   }
