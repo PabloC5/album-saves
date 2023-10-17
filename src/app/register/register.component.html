@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="d-flex justify-content-center">
+                <img class="imagTamanho" src="../assets/logo-preta1.png" alt="logo">
+            </div>
+            <div class="text-center">
+                <h1 class="fonts" >Olá! Realize seu cadastro aqui</h1>    
+            </div>
+        </header>
+        <main>
+            <div class="container ">
+                    <div class="format">
+                        <div class="col">
+                            <p>
+                                <mat-form-field class="custom-form-field" appearance="outline">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput class="custom-input" placeholder="Seu email">
+                                    
+                                </mat-form-field>
+                            </p>
+                        </div>
+
+                        <div class="col">
+                            <p>
+                                <mat-form-field class="custom-form-field" appearance="outline">
+                                    <mat-label>Nome de usuario</mat-label>
+                                    <input matInput class="custom-input" placeholder="Seu nome">
+                                    
+                                </mat-form-field>
+                            </p>
+                        </div>
+
+                       <div class="col">
+                            <p>
+                                <mat-form-field class="custom-form-field" appearance="outline">
+                                    <mat-label>Enter your password</mat-label>
+                                    <input matInput class="custom-input" [type]="hide ? 'password' : 'text'">
+                                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    </button>
+                                </mat-form-field>
+                            </p>
+                       </div>
+                       
+        
+                       <div class="format-button">
+                            <button mat-raised-button class="botao-grande buttonColor">
+                                Cadastrar
+                            </button>
+                       </div>
+                    </div>
+              </div>
+        </main>
+    </body>
+</html>

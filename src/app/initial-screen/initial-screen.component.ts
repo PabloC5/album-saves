@@ -20,6 +20,7 @@ export class InitialScreenComponent implements OnInit {
   buttonLogin = 'Logar';
   buttonSing = 'Cadastrar';
   routerName = '/login';
+  routerRegister = '/register';
   buttonColor = 'colorLogin';
   buttonColorCadastro= 'colorCadastro';
   isInitialScreen: boolean = true;
