@@ -19,6 +19,4 @@ export class ButtonLoginComponent {
   navigateRoutes() {
     this.router.navigate([this.routerName]);
   }
-
-
 }
