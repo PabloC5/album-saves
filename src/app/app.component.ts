@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   urlAnterior: string = '';
 
   ngOnInit(): void {
-
+    debugger
     this.router.events.subscribe((e: any) => {
       if (e instanceof NavigationEnd) {
         this.urlAnterior = this.urlAtual;
