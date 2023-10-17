@@ -1,0 +1,77 @@
+.imagTamanho {
+    width: 240px;
+    height: auto; 
+    margin-top: 5px;
+}
+// novo teste
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    width: 300px;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.form-container form {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+  
+// teste
+
+.fonts {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold
+}
+
+
+.botao-grande {
+    font-size: 16px; 
+    padding: 20px 88px; 
+    margin-left: 25px;
+    margin-bottom: 12px;
+}
+
+.buttonColor {
+    background-color: #06243F !important;
+    color: #FFFFFF !important; 
+    font-family: 'Orbitron', sans-serif;
+}
+
+.custom-form-field .mat-form-field-label {
+    font-size: 100px; 
+}
+
+.custom-form-field  {
+    // font-size: 18px; 
+    padding: 5px;  
+    width: 300px    
+}
+
+.format {
+    margin: -21px;
+}

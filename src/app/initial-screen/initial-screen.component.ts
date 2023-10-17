@@ -10,9 +10,7 @@ import { FooterViewService } from '../footer-view.service';
 export class InitialScreenComponent implements OnInit {
 
   constructor(private router: Router) { }
-  ngOnInit(): void {
-    console.log("salveeeeeee");
-    
+  ngOnInit(): void {    
     console.log(this.router.url);
     
   }
