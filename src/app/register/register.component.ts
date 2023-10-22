@@ -13,7 +13,9 @@ export class RegisterComponent {
 
   constructor(private fb: FormBuilder) {
     this.meuForm = this.fb.group({
-      email: ['', [Validators.required, Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}')]]
+      email: ['', [Validators.required, Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}')]],
+      username: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 
