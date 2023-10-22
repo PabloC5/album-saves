@@ -10,6 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class RegisterComponent {
   hide = true;
   meuForm: FormGroup;
+  userEmail: string = "";
 
   constructor(private fb: FormBuilder) {
     this.meuForm = this.fb.group({
@@ -20,7 +21,9 @@ export class RegisterComponent {
   }
 
   submitForm() {
+    debugger
     console.log("teste");
+    console.log(this.userEmail);
     
   }
 

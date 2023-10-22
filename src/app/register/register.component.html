@@ -23,7 +23,7 @@
                                 <p>
                                     <mat-form-field  class="custom-form-field" appearance="outline">
                                         <mat-label>Email</mat-label>
-                                        <input matInput class="custom-input" formControlName="email" placeholder="Seu email">
+                                        <input matInput class="custom-input" [(ngModel)]="userEmail" formControlName="email" placeholder="Seu email">
                                         <mat-error *ngIf="meuForm.get('email')?.hasError('required')">Campo obrigatório</mat-error>
                                         <mat-error *ngIf="meuForm.get('email')?.hasError('pattern')">Endereço de e-mail inválido</mat-error>
                                     </mat-form-field>
@@ -34,7 +34,7 @@
                                 <p>
                                     <mat-form-field class="custom-form-field" appearance="outline">
                                         <mat-label>Nome de usuario</mat-label>
-                                        <input matInput class="custom-input" placeholder="Seu nome" formControlName="username">
+                                        <input matInput class="custom-input" placeholder="Seu nome"  formControlName="username">
                                         <mat-error *ngIf="meuForm.get('username')?.hasError('required')">Campo obrigatório</mat-error>
                                     </mat-form-field>
                                 </p>
@@ -56,7 +56,7 @@
             
                            <div class="format-button">
                                 <button mat-raised-button   
-                                [disabled]="meuForm.invalid" [ngClass]="meuForm.invalid ? 'buttonDisable': 'buttonColor'" class="botao-grande">
+                                [disabled]="meuForm.invalid" (click)="submitForm()" [ngClass]="meuForm.invalid ? 'buttonDisable': 'buttonColor'" class="botao-grande">
                                     Cadastrar
                                 </button>
                            </div>
