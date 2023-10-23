@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AlbumRegisterComponent } from './album-register/album-register.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,11 @@ import { AlbumRegisterComponent } from './album-register/album-register.componen
     MatIconModule,
     MatGridListModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-top-right', 
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
