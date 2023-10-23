@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FooterViewService } from '../footer-view.service';
 
 @Component({
   selector: 'app-initial-screen',

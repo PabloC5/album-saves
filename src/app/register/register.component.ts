@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { User } from '../model/user';
 
 
 @Component({
@@ -7,10 +8,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
-export class RegisterComponent {
+export class RegisterComponent implements OnInit {
   hide = true;
   meuForm: FormGroup;
   userEmail: string = "";
+  user?: User;
+
+  ngOnInit(): void {
+    this.user = new User('', '','');
+  }
 
   constructor(private fb: FormBuilder) {
     this.meuForm = this.fb.group({
@@ -19,11 +25,12 @@ export class RegisterComponent {
       password: ['', Validators.required]
     });
   }
+  
 
   submitForm() {
     debugger
     console.log("teste");
-    console.log(this.userEmail);
+    console.log(this.user);
     
   }
 
