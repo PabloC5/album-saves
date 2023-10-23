@@ -22,8 +22,9 @@
                             <p>
                                 <mat-form-field class="custom-form-field" appearance="outline">
                                     <mat-label>Email</mat-label>
-                                    <input matInput class="custom-input" placeholder="Seu email">
-                                    
+                                    <input matInput class="custom-input" placeholder="Seu email" formControlName="email">
+                                    <mat-error *ngIf="meuForm.get('email')?.hasError('required')">Campo obrigatório</mat-error>
+                                    <mat-error *ngIf="meuForm.get('email')?.hasError('pattern')">Endereço de e-mail inválido</mat-error>
                                 </mat-form-field>
                             </p>
                         </div>
@@ -31,7 +32,8 @@
                             <p>
                                 <mat-form-field class="custom-form-field" appearance="outline">
                                     <mat-label>Enter your password</mat-label>
-                                    <input matInput class="custom-input" [type]="hide ? 'password' : 'text'">
+                                    <input matInput class="custom-input" [type]="hide ? 'password' : 'text'" formControlName="password">
+                                    <mat-error *ngIf="meuForm.get('password')?.hasError('required')">Campo obrigatório</mat-error>
                                     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                                     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                                     </button>
@@ -40,7 +42,7 @@
                        </div>
         
                        <div class="format-button">
-                            <button mat-raised-button class="botao-grande buttonColor">
+                            <button mat-raised-button [disabled]="meuForm.invalid" [ngClass]="meuForm.invalid ? 'buttonDisable': 'buttonColor'" class="botao-grande">
                                 Logar
                             </button>
                        </div>
