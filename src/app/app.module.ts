@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
@@ -18,6 +18,9 @@ import { InitialScreenComponent } from './initial-screen/initial-screen.componen
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { AlbumRegisterComponent } from './album-register/album-register.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { LoginComponent } from './login/login.component';
     InitialScreenComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    AlbumRegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,12 @@ import { LoginComponent } from './login/login.component';
     MatDividerModule,
     MatIconModule,
     MatGridListModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-top-right', 
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FooterViewService } from './footer-view.service';
+import { UserService } from './user.service';
 
-describe('FooterViewService', () => {
-  let service: FooterViewService;
+describe('UserService', () => {
+  let service: UserService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(FooterViewService);
+    service = TestBed.inject(UserService);
   });
 
   it('should be created', () => {

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FooterViewService } from '../footer-view.service';
 
 @Component({
   selector: 'app-initial-screen',
@@ -10,9 +9,7 @@ import { FooterViewService } from '../footer-view.service';
 export class InitialScreenComponent implements OnInit {
 
   constructor(private router: Router) { }
-  ngOnInit(): void {
-    console.log("salveeeeeee");
-    
+  ngOnInit(): void {    
     console.log(this.router.url);
     
   }
@@ -20,6 +17,7 @@ export class InitialScreenComponent implements OnInit {
   buttonLogin = 'Logar';
   buttonSing = 'Cadastrar';
   routerName = '/login';
+  routerRegister = '/register';
   buttonColor = 'colorLogin';
   buttonColorCadastro= 'colorCadastro';
   isInitialScreen: boolean = true;

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { FooterViewService } from './footer-view.service';
+import { FooterViewService } from './services/footer-view.service';
 
 @Component({
   selector: 'app-root',

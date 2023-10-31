@@ -8,12 +8,6 @@
   </head>
   <body>
     <main>
-      <!-- <mat-grid-list cols="2" rowHeight="1:1">
-        <mat-grid-tile class="colorInitial">
-          salve
-        </mat-grid-tile>
-        <mat-grid-tile class="colorSecond">2</mat-grid-tile>
-      </mat-grid-list> -->
       <div class="container-fluid">
         <div class="row">
             <!-- Divisão esquerda com uma cor de fundo -->
@@ -47,7 +41,7 @@
                       <app-button-login [routerName]="routerName" [buttonColor]="buttonColor" [nameButton]="buttonLogin"></app-button-login>
                     </div>
                     <div>
-                      <app-button-login [nameButton]="buttonSing" [buttonColor]="buttonColorCadastro"></app-button-login>
+                      <app-button-login [routerName]="routerRegister" [nameButton]="buttonSing" [buttonColor]="buttonColorCadastro"></app-button-login>
                     </div>
                     <!-- <button class="btn btn-primary">Botão 1</button>
                     <button class="btn btn-danger">Botão 2</button>   -->
