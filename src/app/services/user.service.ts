@@ -11,4 +11,5 @@ export class UserService {
   saveUser(user: User) {
     localStorage.setItem('user', JSON.stringify(user))
   }
+
 }
