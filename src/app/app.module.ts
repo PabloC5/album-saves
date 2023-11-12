@@ -23,6 +23,7 @@ import { AlbumRegisterComponent } from './album-register/album-register.componen
 import { ToastrModule } from 'ngx-toastr';
 import { MenuComponent } from './menu/menu.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
       positionClass: 'toast-top-right', 
     }),
     MatToolbarModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
