@@ -43,7 +43,7 @@
                            </div>
             
                            <div class="format-button">
-                                <button mat-raised-button [disabled]="meuForm.invalid" [ngClass]="meuForm.invalid ? 'buttonDisable': 'buttonColor'" class="botao-grande">
+                                <button mat-raised-button (click)="logar()" [disabled]="meuForm.invalid" [ngClass]="meuForm.invalid ? 'buttonDisable': 'buttonColor'" class="botao-grande">
                                     Logar
                                 </button>
                            </div>
