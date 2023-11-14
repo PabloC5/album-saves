@@ -33,8 +33,9 @@ export class AlbumRegisterComponent {
 
   submitForm() {
     let idLogado = JSON.parse(localStorage.getItem('userLogin')!!)[0].id;
-    this.album!!.userId = idLogado
-    this.albumService.saveAlbum(this.album!!)
+    this.album!!.userId = idLogado;
+    this.albumService.saveAlbum(this.album!!);
+    this.toastr.success('Cadastro de album realizado com sucesso', 'Sucesso');
     this.album = new Album('','','');
   }
 
