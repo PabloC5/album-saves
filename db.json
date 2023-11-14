@@ -8,6 +8,11 @@
     }
   ],
   "albuns": [
-    
+    {
+      "id": "641",
+      "name_album": "Album1",
+      "album_image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FGraduation&psig=AOvVaw1LLJuCxZKvYQO5qM759Ub-&ust=1700087538080000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIjzr-DFxIIDFQAAAAAdAAAAABAE",
+      "userId": "912"
+    }
   ]
 }
