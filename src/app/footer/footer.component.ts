@@ -8,12 +8,13 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
   showFooter: boolean = true;
-
+  routActive: string | undefined;
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     console.log("estou aqui no footer");
     console.log(this.router.url);
+    this.routActive = this.router.url
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Verifique a rota atual

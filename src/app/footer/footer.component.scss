@@ -1,12 +1,15 @@
 footer {
     background-color: #1F2937;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     left: 0;
     width: 100%;
     color: #fff;
     padding: 33px 0;
     text-align: center;
+}
+
+.ajustaFooter {
+    bottom: 0;
 }
 
 .container {
@@ -33,3 +36,5 @@ a {
     text-decoration: none;
     transition: color 0.3s;
 }
+
+

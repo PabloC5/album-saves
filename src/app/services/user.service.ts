@@ -10,7 +10,6 @@ export class UserService {
   constructor(private jsonApiService: JsonApiService) { }
 
   saveUser(user: User) {
-    debugger
     // localStorage.setItem('user', JSON.stringify(user))
     this.jsonApiService.postJson(user, 'users').subscribe(
       (response) => {
@@ -20,6 +19,10 @@ export class UserService {
         console.error('Erro ao criar post:', error);
       }
     );
+  }
+
+  getUserLogin() {
+    return JSON.parse(localStorage.getItem('userLogin')!!);    
   }
 
 }

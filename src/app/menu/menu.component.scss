@@ -6,6 +6,13 @@
     color: rgb(255, 255, 255);
 }
 
-.testes {
-    border: 2px solid red;
+a {
+    margin-right: 10px;
+    border-right: 1px solid white; /* Adiciona uma borda à direita de cada botão */
+    padding-right: 10px; /* Adiciona algum espaço entre o texto do botão e a borda direita */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+}
+
+.editA {
+    border-left: 1px solid white; /* Adiciona uma borda à direita de cada botão */
 }

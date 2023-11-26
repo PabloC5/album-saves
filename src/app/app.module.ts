@@ -24,6 +24,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { MenuComponent } from './menu/menu.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { HttpClientModule } from '@angular/common/http';
       positionClass: 'toast-top-right', 
     }),
     MatToolbarModule, 
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

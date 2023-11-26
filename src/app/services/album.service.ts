@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Album } from '../model/album';
 import { JsonApiService } from './json-api.service';
@@ -7,8 +8,12 @@ import { JsonApiService } from './json-api.service';
 })
 export class AlbumService {
 
-  constructor(private jsonApiService: JsonApiService) { }
+  constructor(
+    private jsonApiService: JsonApiService, 
+    private http: HttpClient
+  ) { }
 
+  url = 'http://localhost:3000/albuns';
 
   saveAlbum(album: Album) {
     // debugger
@@ -22,4 +27,10 @@ export class AlbumService {
       }
     );
   }
+
+
+  getAlbun(){
+    return this.http.get(this.url).toPromise();
+  }
+
 }
