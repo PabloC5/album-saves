@@ -13,10 +13,12 @@
                 <div *ngFor="let album of data" class="col-3 m-3" [ngClass]="{'classe-escondida': album.userId != idUserLogin}">
                     <mat-card  class="example-card">
                         <img mat-card-image src="{{album.album_image}}" alt="Photo of a Shiba Inu">
+                        <!-- <hr> -->
                         <mat-card-content>
                             <div mat-card-avatar class="example-header-image"></div>
                             <mat-card-title>{{album.name_album}}</mat-card-title>
                             <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                            <button mat-button color="warn">Deletar</button>
                         </mat-card-content>
                     </mat-card>
                 </div>
