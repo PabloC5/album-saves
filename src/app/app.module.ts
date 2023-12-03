@@ -25,6 +25,7 @@ import { MenuComponent } from './menu/menu.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
+import { ModalDeleteComponent } from './modal-delete/modal-delete.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {MatCardModule} from '@angular/material/card';
     LoginComponent,
     RegisterComponent,
     AlbumRegisterComponent,
-    MenuComponent
+    MenuComponent,
+    ModalDeleteComponent
   ],
   imports: [
     BrowserModule,

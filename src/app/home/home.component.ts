@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalDeleteComponent } from '../modal-delete/modal-delete.component';
 import { AlbumService } from '../services/album.service';
 import { UserService } from '../services/user.service';
 
@@ -14,7 +16,9 @@ export class HomeComponent implements OnInit  {
   idUserLogin: any | undefined;
   constructor(
     private albumService: AlbumService, 
-    private userService: UserService) {}
+    private userService: UserService,
+    public dialog: MatDialog
+    ) {}
 
   ngOnInit() {
     this.getAlbunfinal() 
@@ -24,10 +28,30 @@ export class HomeComponent implements OnInit  {
 
   getAlbunfinal() {
     this.albumService.getAlbun().then((result) => {
-      this.data = result;
+      this.albumService.albumUp = result;
+      // this.data = this.albumService.albumUp;
     }).catch((error) => {
       this.error = error;
     });
+  }
+
+
+  openModal(idDeleteAlbum: number) {
+    console.log(idDeleteAlbum);
+    this.albumService.idDeleteAlbum = idDeleteAlbum;
+    const dialogRef = this.dialog.open(ModalDeleteComponent, {
+      width: '300px', // Defina o tamanho da modal conforme necessário
+      // Outras opções como height, data, etc.
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Modal fechada. Resultado: ${result}`);
+      // Faça algo com o resultado, se necessário
+    });
+  }
+
+  albumFinalService(): any {
+    return this.albumService.albumUp;
   }
 
 }

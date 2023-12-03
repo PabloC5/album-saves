@@ -14,6 +14,8 @@ export class AlbumService {
   ) { }
 
   url = 'http://localhost:3000/albuns';
+  idDeleteAlbum: number = 0;
+  albumUp: any;
 
   saveAlbum(album: Album) {
     // debugger
@@ -31,6 +33,12 @@ export class AlbumService {
 
   getAlbun(){
     return this.http.get(this.url).toPromise();
+  }
+
+  deleteAlbum() {
+    debugger
+    console.log(this.idDeleteAlbum);
+    return this.http.delete(`${this.url}/${this.idDeleteAlbum}`)
   }
 
 }
