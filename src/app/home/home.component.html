@@ -7,7 +7,6 @@
     
     <main>
         <app-menu></app-menu>
-        
         <div class="container mt-3 mb-3">
             <div class="row d-flex justify-content-center">
                 <div *ngFor="let album of data" class="col-3 m-3" [ngClass]="{'classe-escondida': album.userId != idUserLogin}">
@@ -18,7 +17,7 @@
                             <div mat-card-avatar class="example-header-image"></div>
                             <mat-card-title>{{album.name_album}}</mat-card-title>
                             <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-                            <button mat-button color="warn">
+                            <button mat-button color="warn" (click)="openModal(album.id)">
                                 <i class="fa-solid fa-trash-can"></i>
                             </button>
                             <button mat-button color="primary">
