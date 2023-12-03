@@ -42,10 +42,12 @@ export class LoginComponent {
           this.router.navigate(['/home'])
         } else {
           console.log('Invalid credentials');
+          this.toastr.error('Senha incorreta', 'Erro');
         }
       },
       (error) => {
-        console.error('Error during login:', error);
+        console.error('Erro ao efetuar o login:', error);
+        this.toastr.error('Erro ao efetuar o login', 'Erro');
       }
     );
   }
