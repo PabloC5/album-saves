@@ -1,0 +1,21 @@
+.example-card {
+    max-width: 400px;
+}
+
+
+.teste {
+    border: 2px solid red;
+}
+
+/* meu-componente.component.css */
+mat-card {
+    max-width: 100%; /* Garante que o card não ultrapasse a largura máxima da tela */
+  }
+  
+mat-grid-list {
+  margin: 16px; /* Adiciona margens ao redor da grade conforme necessário */
+}
+  
+.classe-escondida {
+  display: none;
+}

@@ -21,6 +21,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AlbumRegisterComponent } from './album-register/album-register.component';
 import { ToastrModule } from 'ngx-toastr';
+import { MenuComponent } from './menu/menu.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,8 @@ import { ToastrModule } from 'ngx-toastr';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    AlbumRegisterComponent
+    AlbumRegisterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +56,9 @@ import { ToastrModule } from 'ngx-toastr';
       timeOut: 3000,
       positionClass: 'toast-top-right', 
     }),
+    MatToolbarModule, 
+    HttpClientModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

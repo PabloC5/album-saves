@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { User } from '../model/user';
 import { UserService } from '../services/user.service';
 import { ToastrService } from 'ngx-toastr';
-
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-register',
@@ -34,8 +34,11 @@ export class RegisterComponent implements OnInit {
   
 
   submitForm() {
+    let encryptedString = CryptoJS.SHA256(this.user!!.password!!).toString(CryptoJS.enc.Hex);
+    this.user!!.password = encryptedString
     this.userService.saveUser(this.user!!)
     this.toastr.success('Cadastro realizado com sucesso', 'Sucesso');
+    this.user = new User('', '','');
   }
 
 }

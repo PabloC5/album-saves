@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "912",
+      "username": "pablo",
+      "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+      "email": "pablo@gmail.com"
+    },
+    {
+      "id": "913",
+      "username": "pablo2",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+      "email": "pablocorreia@gmail.com"
+    }
+  ],
+  "albuns": [
+    {
+      "id": 641,
+      "name_album": "Album1",
+      "album_image": "https://rocknbold.com/wp-content/uploads/2020/08/0467c77b22d4683dfde14facdf2c35ff.1000x1000x1-1536x1536.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 1,
+      "name_album": "Ronstring",
+      "album_image": "https://rocknbold.com/wp-content/uploads/2020/08/71mlUmU1TVL._SL1500_.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 2,
+      "name_album": "Latlux",
+      "album_image": "https://i.pinimg.com/550x/29/56/36/29563663d706beb26d658f7531816b8e.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 3,
+      "name_album": "Gembucket",
+      "album_image": "https://upload.wikimedia.org/wikipedia/pt/7/7b/Graduation_%28%C3%A1lbum_de_Kanye_West%29.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 4,
+      "name_album": "Home Ing",
+      "album_image": "http://dummyimage.com/200x100.png/cc0000/ffffff",
+      "userId": "913"
+    },
+    {
+      "id": 5,
+      "name_album": "Cardguard",
+      "album_image": "http://dummyimage.com/233x100.png/ff4444/ffffff",
+      "userId": "913"
+    },
+    {
+      "id": 6,
+      "name_album": "Duobam",
+      "album_image": "http://dummyimage.com/232x100.png/5fa2dd/ffffff",
+      "userId": "913"
+    },
+    {
+      "id": 7,
+      "name_album": "Stim",
+      "album_image": "http://dummyimage.com/225x100.png/dddddd/000000",
+      "userId": "913"
+    },
+    {
+      "id": 8,
+      "name_album": "Tempsoft",
+      "album_image": "http://dummyimage.com/200x100.png/dddddd/000000",
+      "userId": "913"
+    },
+    {
+      "id": 9,
+      "name_album": "Asoka",
+      "album_image": "http://dummyimage.com/202x100.png/5fa2dd/ffffff",
+      "userId": "913"
+    },
+    {
+      "id": 10,
+      "name_album": "Stronghold",
+      "album_image": "http://dummyimage.com/224x100.png/5fa2dd/ffffff",
+      "userId": "913"
+    }
+  ]
+}
