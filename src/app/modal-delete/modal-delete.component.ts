@@ -9,6 +9,7 @@ import { AlbumService } from '../services/album.service';
   styleUrls: ['./modal-delete.component.scss']
 })
 export class ModalDeleteComponent {
+  error: any;
   constructor(
     private albumService: AlbumService, 
     public dialogRef: MatDialogRef<ModalDeleteComponent>,
@@ -21,11 +22,19 @@ export class ModalDeleteComponent {
     this.albumService.deleteAlbum().subscribe(() => {
       console.log("Delete do album executado corretamente");
       this.toastr.success('Album deletado com sucesso', 'Sucesso');
-      
+      this.teste()
     },(error) => {
       console.error("Erro ao deletar album", error);
       this.toastr.error('Erro ao deletar album', 'Erro');
     })
     this.dialogRef.close();
+  }
+
+  teste() {
+    this.albumService.getAlbun().then((result) => {
+      this.albumService.albumUp = result;
+    }).catch((error) => {
+      this.error = error;
+    });
   }
 }

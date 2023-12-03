@@ -28,7 +28,8 @@ export class HomeComponent implements OnInit  {
 
   getAlbunfinal() {
     this.albumService.getAlbun().then((result) => {
-      this.data = result;
+      this.albumService.albumUp = result;
+      // this.data = this.albumService.albumUp;
     }).catch((error) => {
       this.error = error;
     });
@@ -47,6 +48,10 @@ export class HomeComponent implements OnInit  {
       console.log(`Modal fechada. Resultado: ${result}`);
       // Faça algo com o resultado, se necessário
     });
+  }
+
+  albumFinalService(): any {
+    return this.albumService.albumUp;
   }
 
 }

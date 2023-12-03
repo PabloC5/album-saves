@@ -15,6 +15,7 @@ export class AlbumService {
 
   url = 'http://localhost:3000/albuns';
   idDeleteAlbum: number = 0;
+  albumUp: any;
 
   saveAlbum(album: Album) {
     // debugger
