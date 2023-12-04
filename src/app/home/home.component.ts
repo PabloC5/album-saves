@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ModalDeleteComponent } from '../modal-delete/modal-delete.component';
 import { Album } from '../model/album';
 import { AlbumService } from '../services/album.service';
+import { AuthService } from '../services/auth.service';
 import { UserService } from '../services/user.service';
 
 @Component({
@@ -18,7 +19,8 @@ export class HomeComponent implements OnInit  {
   constructor(
     private albumService: AlbumService, 
     private userService: UserService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private authService: AuthService
     ) {}
 
   ngOnInit() {
@@ -57,5 +59,10 @@ export class HomeComponent implements OnInit  {
 
     window.open(url, '_blank');
   }
+
+  // teste() {
+  //   debugger
+  //   this.authService.isLogged();
+  // }
 
 }
