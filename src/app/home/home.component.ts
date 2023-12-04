@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalDeleteComponent } from '../modal-delete/modal-delete.component';
+import { Album } from '../model/album';
 import { AlbumService } from '../services/album.service';
 import { UserService } from '../services/user.service';
 
@@ -11,9 +12,9 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit  {
-  data: any;
+  data?: Album[];
   error: any;
-  idUserLogin: any | undefined;
+  idUserLogin: string | undefined;
   constructor(
     private albumService: AlbumService, 
     private userService: UserService,
@@ -29,7 +30,6 @@ export class HomeComponent implements OnInit  {
   getAlbunfinal() {
     this.albumService.getAlbun().then((result) => {
       this.albumService.albumUp = result;
-      // this.data = this.albumService.albumUp;
     }).catch((error) => {
       this.error = error;
     });
@@ -40,18 +40,22 @@ export class HomeComponent implements OnInit  {
     console.log(idDeleteAlbum);
     this.albumService.idDeleteAlbum = idDeleteAlbum;
     const dialogRef = this.dialog.open(ModalDeleteComponent, {
-      width: '300px', // Defina o tamanho da modal conforme necessário
-      // Outras opções como height, data, etc.
+      width: '300px', 
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Modal fechada. Resultado: ${result}`);
-      // Faça algo com o resultado, se necessário
     });
   }
 
   albumFinalService(): any {
     return this.albumService.albumUp;
+  }
+
+  datailAlbum(idAlbum: number) {
+    const url = `/detail-album/${idAlbum}`;
+
+    window.open(url, '_blank');
   }
 
 }

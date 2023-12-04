@@ -36,9 +36,11 @@ export class AlbumService {
   }
 
   deleteAlbum() {
-    debugger
-    console.log(this.idDeleteAlbum);
     return this.http.delete(`${this.url}/${this.idDeleteAlbum}`)
+  }
+
+  getAlbumForId(idAlbum: number) {
+    return this.http.get(`${this.url}/${idAlbum}`);
   }
 
 }

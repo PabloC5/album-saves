@@ -32,7 +32,6 @@ export class LoginComponent {
 
     this.meuForm.get('password')?.setValue(encryptedString)
     console.log(this.meuForm.get('password')?.value)
-    debugger
     this.jsonServerService.loginJson(this.meuForm.get('email')?.value, this.meuForm.get('password')?.value).subscribe(
       (response) => {
         if (response.length > 0) {
