@@ -18,8 +18,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'album-register', component: AlbumRegisterComponent },
-  // {path: 'detail-album/:albumId', component: DetailPageComponent}
-  {path: 'detail-album', component: DetailPageComponent}
+  {path: 'detail-album/:albumId', component: DetailPageComponent}
+  // {path: 'detail-album', component: DetailPageComponent}
 ];
 
 @NgModule({

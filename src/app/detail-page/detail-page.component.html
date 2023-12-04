@@ -6,42 +6,26 @@
     </header>  
 
     <app-menu></app-menu>
-
     <main>
-        <!-- <div *ngIf="cardDetalhes">
-            <img [src]="cardDetalhes.imagem" alt="Imagem do Card">
-            <h2>{{ cardDetalhes.titulo }}</h2>
-            <p>Dona do Card: {{ cardDetalhes.nomeDona }}</p>
-        </div> -->
-
-       
-
         <div class="container mt-5">
             <div class="row">
               <div class="col-5 mb-5">
                 <mat-card>
-                  <!-- Imagem dentro do card -->
-                  <img src="https://upload.wikimedia.org/wikipedia/en/c/c8/Joey_Badass_-_2000_%28artwork%29.jpg" 
+                  <img [src]="album?.album_image" 
                   alt="Imagem do Card" class="img-fluid ajustaDetalhe">
                 </mat-card>
               </div>
               <div class="col-5">
                 <mat-card>
-                  <!-- Informações dentro do card -->
                   <div class="col-5">
-                    <!-- Informações -->
                     <div class="text-center">
-                        <p>Titulo do album: 2000</p>
-                        <p>Postado por: Pablo</p>
-                      <!-- Adicione outras informações conforme necessário -->
+                        <p>Titulo do album: {{album?.name_album}}</p>
+                        <p>Postado por: {{userLogado?.username}}</p>
                     </div>
                   </div>
                 </mat-card>
               </div>
             </div>
         </div>
-          
-          
     </main>
-
 </body>
