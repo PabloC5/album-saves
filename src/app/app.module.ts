@@ -27,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { ModalDeleteComponent } from './modal-delete/modal-delete.component';
 import { DetailPageComponent } from './detail-page/detail-page.component';
+import { AuthGuard } from './guard/auth.guard';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,7 @@ import { DetailPageComponent } from './detail-page/detail-page.component';
     HttpClientModule,
     MatCardModule,
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

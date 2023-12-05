@@ -10,7 +10,6 @@ export class UserService {
   constructor(private jsonApiService: JsonApiService) { }
 
   saveUser(user: User) {
-    // localStorage.setItem('user', JSON.stringify(user))
     this.jsonApiService.postJson(user, 'users').subscribe(
       (response) => {
         console.log('Post criado com sucesso:', response);
