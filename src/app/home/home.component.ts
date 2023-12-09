@@ -59,10 +59,4 @@ export class HomeComponent implements OnInit  {
 
     window.open(url, '_blank');
   }
-
-  // teste() {
-  //   debugger
-  //   this.authService.isLogged();
-  // }
-
 }

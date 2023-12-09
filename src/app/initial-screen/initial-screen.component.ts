@@ -11,9 +11,8 @@ export class InitialScreenComponent implements OnInit {
   constructor(private router: Router) { }
   ngOnInit(): void {    
     console.log(this.router.url);
-    
   }
-  
+
   buttonLogin = 'Logar';
   buttonSing = 'Cadastrar';
   routerName = '/login';

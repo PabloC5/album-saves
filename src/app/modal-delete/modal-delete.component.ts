@@ -17,7 +17,6 @@ export class ModalDeleteComponent {
   ) {}
 
   deletarAlbum() {
-    console.log("salve");
     this.albumService.deleteAlbum().subscribe(() => {
       console.log("Delete do album executado corretamente");
       this.toastr.success('Album deletado com sucesso', 'Sucesso');

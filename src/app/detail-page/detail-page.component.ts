@@ -30,7 +30,6 @@ export class DetailPageComponent implements OnInit {
     let userLogin = this.userService.getUserLogin(); 
     this.userLogado = userLogin[0]
     console.log(this.userLogado);
-    
   }
 
   getAlbum(albumId: number) {

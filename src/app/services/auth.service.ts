@@ -19,7 +19,6 @@ export class AuthService {
   logado: boolean = false;
 
   isLogged(): boolean {
-    debugger
     let userLogado = this.userService.getUserLogin();
 
     if (userLogado) {

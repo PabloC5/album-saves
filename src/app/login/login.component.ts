@@ -30,30 +30,8 @@ export class LoginComponent {
   }
 
   logar() {
-    debugger
     let encriptPasswor = CryptoJS.SHA256(this.meuForm.get('password')?.value).toString(CryptoJS.enc.Hex);
-
     this.meuForm.get('password')?.setValue(encriptPasswor)
-    console.log(this.meuForm.get('password')?.value)
     this.authService.login(this.meuForm);
-    // this.jsonServerService.loginJson(this.meuForm.get('email')?.value, this.meuForm.get('password')?.value).subscribe(
-    //   (response) => {
-    //     if (response.length > 0) {
-    //       localStorage.setItem('userLogin', JSON.stringify(response))
-    //       console.log('Login successful');
-    //       this.toastr.success('Login realizado com sucesso', 'Sucesso');
-    //       this.router.navigate(['/home'])
-    //     } else {
-    //       console.log('Invalid credentials');
-    //       this.toastr.error('Senha incorreta', 'Erro');
-    //     }
-    //   },
-    //   (error) => {
-    //     console.error('Erro ao efetuar o login:', error);
-    //     this.toastr.error('Erro ao efetuar o login', 'Erro');
-    //   }
-    // );
   }
-
-
 }
