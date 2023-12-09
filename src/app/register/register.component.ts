@@ -4,6 +4,7 @@ import { User } from '../model/user';
 import { UserService } from '../services/user.service';
 import { ToastrService } from 'ngx-toastr';
 import * as CryptoJS from 'crypto-js';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -23,7 +24,8 @@ export class RegisterComponent implements OnInit {
   constructor(
     private fb: FormBuilder, 
     private userService: UserService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private router: Router,
   ) {
     this.meuForm = this.fb.group({
       email: ['', [Validators.required, Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}')]],
@@ -38,6 +40,7 @@ export class RegisterComponent implements OnInit {
     this.user!!.password = encryptedString
     this.userService.saveUser(this.user!!)
     this.toastr.success('Cadastro realizado com sucesso', 'Sucesso');
+    this.router.navigate(['/login'])
     this.user = new User('', '','');
   }
 

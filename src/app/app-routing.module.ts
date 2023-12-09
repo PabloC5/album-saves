@@ -14,16 +14,12 @@ const routes: Routes = [
   { 
     path: 'home', 
     component: HomeComponent,
-    canActivate: [AuthGuard],
-    children: [
-      { path: 'register', component: RegisterComponent },
-    ]
+    canActivate: [AuthGuard]
   },
   { path: 'login', component: LoginComponent },
-  // { path: 'register', component: RegisterComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'album-register', component: AlbumRegisterComponent },
   {path: 'detail-album/:albumId', component: DetailPageComponent}
-  // {path: 'detail-album', component: DetailPageComponent}
 ];
 
 @NgModule({
