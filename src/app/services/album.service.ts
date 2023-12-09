@@ -18,8 +18,6 @@ export class AlbumService {
   albumUp: any;
 
   saveAlbum(album: Album) {
-    // debugger
-    // localStorage.setItem('user', JSON.stringify(user))
     this.jsonApiService.postJson(album, 'albuns').subscribe(
       (response) => {
         console.log('Post criado com sucesso:', response);
