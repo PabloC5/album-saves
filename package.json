@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href=/album-saves/",
+    "build": "ng build --configuration=production --base-href=/album-saves/",
     "ghpages": "angular-cli-ghpages --dir=dist/album-saves",
     "deploy": "npm run build & npm run ghpages",
     "watch": "ng build --watch --configuration development",
@@ -23,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@fortawesome/fontawesome-free": "^6.4.2",
+    "angular-cli-ghpages": "^1.0.7",
     "bootstrap": "^5.3.2",
     "crypto-js": "^4.2.0",
     "ngx-toastr": "^17.0.2",
