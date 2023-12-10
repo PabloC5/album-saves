@@ -11,6 +11,9 @@ O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado 
 
 https://www.figma.com/file/Zz1xtcz99s8rxTFvXTzqPe/album-saves?type=design&node-id=0-1&mode=design&t=e008XBJUNFJYPkPq-0
 
+## link para o video da apresentação
+https://drive.google.com/file/d/1cbV4Kg1w6rXCaV-gc7JWGRGTPoFRrsaR/view?usp=sharing
+
 ## Checklist
 #### RA1 - Prototipar e projetar interfaces gráficas de usuário, considerando princípios de usabilidade e experiência do usuário.
 - [x] ID1: O aluno desenvolveu protótipos de interfaces que demonstram compreensão das diretrizes de usabilidade.
