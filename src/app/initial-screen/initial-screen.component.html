@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 colorInitial text-center py-5 d-flex-center">
+                <!-- Insira seu logo aqui -->
+                <div>
+                  <div>
+                    <img src="../assets/logo-preta1.png" alt="Seu Logo" class="img-fluid">
+                  </div>
+                  <div>
+                    <h2 class="font-weight-bold mt-3 p-3 text-justify fontOrbitron">
+                      salve e classifique seus albums favoritos
+                    </h2>
+                  </div>
+                </div>
+            </div>
+            
+            <!-- Divisão direita com outra cor de fundo -->
+            <div class="col-md-6 colorSecond text-center py-5 d-flex-center">
+                <!-- Dois botões -->
+                <div>
+                  <div>
+                    <h2 class="text-white font-weight-bold fontOrbitron">
+                      Seja bem-vindo 
+                      O que deseja fazer?
+                    </h2>
+                  </div>
+                  <div class="button-container">
+                    <div>
+                      <app-button-login [routerName]="routerName" [buttonColor]="buttonColor" [nameButton]="buttonLogin"></app-button-login>
+                    </div>
+                    <div>
+                      <app-button-login [routerName]="routerRegister" [nameButton]="buttonSing" [buttonColor]="buttonColorCadastro"></app-button-login>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+  </body>
+</html>

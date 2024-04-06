@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="d-flex justify-content-center">
+                <img class="imagTamanho" src="../assets/logo-preta1.png" alt="logo">
+            </div>
+            <div class="text-center">
+                <h1 class="fonts" >Olá! Realize seu login aqui</h1>    
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                    <div class="format">
+                        <form [formGroup]="meuForm">
+                            <div class="col">
+                                <p>
+                                    <mat-form-field class="custom-form-field" appearance="outline">
+                                        <mat-label>Email</mat-label>
+                                        <input matInput class="custom-input" placeholder="Seu email" formControlName="email">
+                                        <mat-error *ngIf="meuForm.get('email')?.hasError('required')">Campo obrigatório</mat-error>
+                                        <mat-error *ngIf="meuForm.get('email')?.hasError('pattern')">Endereço de e-mail inválido</mat-error>
+                                    </mat-form-field>
+                                </p>
+                            </div>
+                           <div class="col">
+                                <p>
+                                    <mat-form-field class="custom-form-field" appearance="outline">
+                                        <mat-label>Enter your password</mat-label>
+                                        <input matInput class="custom-input" [type]="hide ? 'password' : 'text'" formControlName="password">
+                                        <mat-error *ngIf="meuForm.get('password')?.hasError('required')">Campo obrigatório</mat-error>
+                                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                        </button>
+                                    </mat-form-field>
+                                </p>
+                           </div>
+            
+                           <div class="format-button">
+                                <button mat-raised-button (click)="logar()" [disabled]="meuForm.invalid" [ngClass]="meuForm.invalid ? 'buttonDisable': 'buttonColor'" class="botao-grande">
+                                    Logar
+                                </button>
+                           </div>
+                        </form>
+                    </div>
+              </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": "912",
+      "username": "pablo",
+      "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+      "email": "pablo@gmail.com"
+    },
+    {
+      "id": "913",
+      "username": "pablo2",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+      "email": "pablocorreia@gmail.com"
+    },
+    {
+      "id": "295",
+      "username": "pabloCorreia",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+      "email": "pabloc@gmail.com"
+    },
+    {
+      "id": "300",
+      "username": "PabloTeste",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+      "email": "pabloTeste@gmail.com"
+    }
+  ],
+  "albuns": [
+    {
+      "id": 641,
+      "name_album": "Album1",
+      "album_image": "https://rocknbold.com/wp-content/uploads/2020/08/0467c77b22d4683dfde14facdf2c35ff.1000x1000x1-1536x1536.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 1,
+      "name_album": "Ronstring",
+      "album_image": "https://rocknbold.com/wp-content/uploads/2020/08/71mlUmU1TVL._SL1500_.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 2,
+      "name_album": "Latlux",
+      "album_image": "https://i.pinimg.com/550x/29/56/36/29563663d706beb26d658f7531816b8e.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 3,
+      "name_album": "Graduation",
+      "album_image": "https://upload.wikimedia.org/wikipedia/pt/7/7b/Graduation_%28%C3%A1lbum_de_Kanye_West%29.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 4,
+      "name_album": "college dropout",
+      "album_image": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/10/kanye-west-the-college-dropout.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 5,
+      "name_album": "2000",
+      "album_image": "https://upload.wikimedia.org/wikipedia/en/c/c8/Joey_Badass_-_2000_%28artwork%29.jpg",
+      "userId": "913"
+    },
+    {
+      "id": 7,
+      "name_album": "Stim",
+      "album_image": "https://i.scdn.co/image/ab6761610000e5ebd8a88958cfe8bd72b8fe736e",
+      "userId": "913"
+    },
+    {
+      "id": 205,
+      "name_album": "Graduation",
+      "album_image": "https://m.media-amazon.com/images/I/61xeahHlDiL._AC_UF1000,1000_QL80_.jpg",
+      "userId": "295"
+    },
+    {
+      "id": 642,
+      "name_album": "Jesus is king",
+      "album_image": "https://monkeybuzz.com.br/wp-content/uploads/2019/10/jesus-is-king-1920x1920.jpg",
+      "userId": "295"
+    },
+    {
+      "id": 64,
+      "name_album": "jayz",
+      "album_image": "https://rapemmovimento.com.br/wp-content/uploads/2015/03/the-blueprint-capa.jpg",
+      "userId": "300"
+    }
+  ]
+}

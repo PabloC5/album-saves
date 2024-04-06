@@ -1,0 +1,31 @@
+<body>
+    <header>
+        <div class="d-flex justify-content-center mt-3">
+            <img class="imagTamanho" src="../assets/logo-preta1.png" alt="logo">
+        </div>
+    </header>  
+
+    <app-menu></app-menu>
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+              <div class="col-5 mb-5">
+                <mat-card>
+                  <img [src]="album?.album_image" 
+                  alt="Imagem do Card" class="img-fluid ajustaDetalhe">
+                </mat-card>
+              </div>
+              <div class="col-5">
+                <mat-card>
+                  <div class="col-5">
+                    <div class="text-center">
+                        <p>Titulo do album: {{album?.name_album}}</p>
+                        <p>Postado por: {{userLogado?.username | lowercase}}</p>
+                    </div>
+                  </div>
+                </mat-card>
+              </div>
+            </div>
+        </div>
+    </main>
+</body>

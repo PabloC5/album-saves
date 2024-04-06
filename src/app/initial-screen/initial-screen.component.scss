@@ -1,0 +1,33 @@
+// mat-grid-tile {
+//     background: lightblue;
+// }
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.fontOrbitron {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold
+}
+
+.colorInitial {
+    background: #97D2D4;
+}
+
+.colorSecond {
+    background: #1F2937;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% da altura da tela */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Isso alinhará os botões horizontalmente com espaço entre eles */
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="d-flex justify-content-center">
+                <img class="imagTamanho" src="../assets/logo-preta1.png" alt="logo">
+            </div>
+            <div class="text-center">
+                <h1 class="fonts" >Salve aqui seu album!!</h1>    
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                    <div class="format">
+                        <div class="col">
+                            <p>
+                                <mat-form-field class="custom-form-field" appearance="outline">
+                                    <mat-label>Nome do album</mat-label>
+                                    <input matInput class="custom-input" [(ngModel)]="album!!.name_album" placeholder="">
+                                    
+                                </mat-form-field>
+                            </p>
+                        </div>
+
+                        <div class="col">
+                            <p>
+                                <mat-form-field class="custom-form-field" appearance="outline">
+                                    <mat-label>URL capa do album</mat-label>
+                                    <input matInput class="custom-input" [(ngModel)]="album!!.album_image" placeholder="url-imagem">
+                                    
+                                </mat-form-field>
+                            </p>
+                        </div>
+
+                       <!-- <div class="col">
+                            <p>
+                                <mat-form-field class="custom-form-field" appearance="outline">
+                                    <mat-label>Enter your password</mat-label>
+                                    <input matInput class="custom-input" [type]="hide ? 'password' : 'text'">
+                                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    </button>
+                                </mat-form-field>
+                            </p>
+                       </div> -->
+
+                       <div class="format-button">
+                            <button mat-raised-button (click)="submitForm()" class="botao-grande buttonColor">
+                                Salvar
+                            </button>
+                       </div>
+                    </div>
+              </div>
+        </main>
+    </body>
+</html>

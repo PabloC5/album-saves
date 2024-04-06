@@ -1,0 +1,43 @@
+footer {
+    background-color: #1F2937;
+    // position: fixed;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 33px 0;
+    text-align: center;
+    bottom: 0;
+    z-index: 1; /* Garante que o rodapé esteja abaixo do conteúdo principal */
+
+}
+
+.ajustaFooter {
+    bottom: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
