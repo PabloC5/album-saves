@@ -17,6 +17,12 @@
       "username": "pabloCorreia",
       "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
       "email": "pabloc@gmail.com"
+    },
+    {
+      "id": "300",
+      "username": "PabloTeste",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+      "email": "pabloTeste@gmail.com"
     }
   ],
   "albuns": [
@@ -73,6 +79,12 @@
       "name_album": "Jesus is king",
       "album_image": "https://monkeybuzz.com.br/wp-content/uploads/2019/10/jesus-is-king-1920x1920.jpg",
       "userId": "295"
+    },
+    {
+      "id": 64,
+      "name_album": "jayz",
+      "album_image": "https://rapemmovimento.com.br/wp-content/uploads/2015/03/the-blueprint-capa.jpg",
+      "userId": "300"
     }
   ]
 }
