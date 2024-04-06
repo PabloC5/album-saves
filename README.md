@@ -1,6 +1,6 @@
 # album-saves
 
-Este projeto tem como objetivo tornar masi facil catalogar seus albuns favoritos onde será possivel adicionar, excluir e também favoritalos com uma nota de 1 a 5.
+Este projeto tem como objetivo tornar mais facíl catalogar seus albuns favoritos onde será possivel adicionar, excluir e também favoritalos com uma nota de 1 a 5.
 
 O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.
 
